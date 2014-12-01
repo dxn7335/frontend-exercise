@@ -18,25 +18,25 @@ var app = angular.module('myApp',
           abstract: true,
           views:{
               'search':{
-                  'templateUrl': 'frontend-exercise/templates/search.html',
+                  'templateUrl': 'templates/search.html',
                   'controller': 'searchController', // map js to html scope
               },
               'info-sect':{
-                  'templateUrl': 'frontend-exercise/templates/info.html',
+                  'templateUrl': 'templates/info.html',
                   'controller': 'infoController', // map js to html scope
               },
               'video-sect':{
-                  'templateUrl': 'frontend-exercise/templates/videos.html',
+                  'templateUrl': 'templates/videos.html',
                   'controller': 'videoController', // map js to html scope
               }
           }
         })
         .state('home',{
-          url: "",
+          url: "/",
           abstract: true,
           views:{
               'home':{
-                  templateUrl: 'frontend-exercise/templates/home.html',
+                  templateUrl: 'templates/home.html',
                   controller: 'searchController', // map js to html scope
               }
           }
