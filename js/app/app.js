@@ -32,7 +32,7 @@ var app = angular.module('myApp',
           }
         })
         .state('home',{
-          url: "/",
+          url: "",
           abstract: true,
           views:{
               'home':{
