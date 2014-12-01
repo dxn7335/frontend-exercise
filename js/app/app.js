@@ -15,6 +15,7 @@ var app = angular.module('myApp',
       $stateProvider
         .state('searched', {
           url: '/channel/:id',
+          abstract: true,
           views:{
               'search':{
                   'templateUrl': 'templates/search.html',
@@ -32,6 +33,7 @@ var app = angular.module('myApp',
         })
         .state('home',{
           url: "/",
+          abstract: true,
           views:{
               'home':{
                   templateUrl: 'templates/home.html',
