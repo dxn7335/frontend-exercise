@@ -18,15 +18,15 @@ var app = angular.module('myApp',
           abstract: true,
           views:{
               'search':{
-                  'templateUrl': 'templates/search.html',
+                  'templateUrl': 'frontend-exercise/templates/search.html',
                   'controller': 'searchController', // map js to html scope
               },
               'info-sect':{
-                  'templateUrl': 'templates/info.html',
+                  'templateUrl': 'frontend-exercise/templates/info.html',
                   'controller': 'infoController', // map js to html scope
               },
               'video-sect':{
-                  'templateUrl': 'templates/videos.html',
+                  'templateUrl': 'frontend-exercise/templates/videos.html',
                   'controller': 'videoController', // map js to html scope
               }
           }
@@ -36,7 +36,7 @@ var app = angular.module('myApp',
           abstract: true,
           views:{
               'home':{
-                  templateUrl: 'templates/home.html',
+                  templateUrl: 'frontend-exercise/templates/home.html',
                   controller: 'searchController', // map js to html scope
               }
           }
