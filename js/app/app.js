@@ -8,14 +8,13 @@ var app = angular.module('myApp',
     .config(function ( $stateProvider, $urlRouterProvider ) {
       'use strict';
       // configure urls
-      $urlRouterProvider.otherwise('/');
       $urlRouterProvider.when('/channel', '/');
-        
+      $urlRouterProvider.otherwise('/');
+     
       //state
       $stateProvider
         .state('searched', {
           url: '/channel/:id',
-          abstract: true,
           views:{
               'search':{
                   'templateUrl': 'templates/search.html',
@@ -33,7 +32,6 @@ var app = angular.module('myApp',
         })
         .state('home',{
           url: "/",
-          abstract: true,
           views:{
               'home':{
                   templateUrl: 'templates/home.html',
