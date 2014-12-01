@@ -1,0 +1,13 @@
+<div class="sect">
+    <div class="user-info" ng-hide="info == null">
+        <img src="{{info.logo}}" class="banner-img" alt=""/>
+        <div class='info-txt-wrap'>
+            <h3 class='name'>{{info.name}}</h3>
+            <a href='{{info.creator_url}}'><span>{{info.creator_name}}</span></a>
+            <p class='desc' ng-bind-html="renderHTML(info.description)"></p>
+            <span class='stats'><span class='num'>{{info.total_videos}}</span> Videos</span>
+            <span class='stats'><span class='num'>{{info.total_subscribers}}</span> Subscribers</span>
+            <a href='{{info.url}}' class='channel-url'><i class="fa fa-link"></i> Visit Channel</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,149 @@
+#video-sect
+    margin-top: 85px
+    position: relative
+    padding: 3% 1%
+    float: right
+    width: 80%
+    background: #eee
+    
+    #loading
+        display: block
+        position: absolute
+        left: 50%
+        top: 40%
+        transform: translate(-50%, -40%)
+        -webkit-transform: translate(-50%, -40%)
+        -moz-transform: translate(-50%, -40%)
+        -o-transform: translate(-50%, -40%)
+        background: rgba(0,0,0,0.85)
+        color: #fff
+        text-align: center
+        font-size: 120%
+        padding: 1%
+        min-width: 120px
+        
+    .video-item
+        display: inline-block
+        width: 100%
+        margin-bottom: 4%
+        position: relative
+        left: -2%
+        opacity: 0.35
+        transition: all 0.3s ease
+        -moz-transition: all 0.3s ease
+        -webkit-transition: all 0.3s ease-in-out
+        -webkit-animation: slideleft 0.8s /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: slideleft 0.8s /* Firefox < 16 */
+        -ms-animation: slideleft 0.8s /* Internet Explorer */
+        -o-animation: slideleft 0.8s /* Opera < 12.1 */
+        
+        .preview-vid
+            position: relative
+            
+            .preview-image
+                min-height: 381px 
+                max-height: 100%
+                width: 95%
+                
+            .play-btn
+                display: none
+                position: absolute
+                left: 47%
+                top: 50%
+                padding: 2%
+                font-size: 400%
+                color: #fff
+                opacity: 0.5
+                transform: translate(-47%, -50%)
+                -webkit-transform: translate(-47%, -50%)
+                -moz-transform: translate(-47%, -50%)
+                -o-transform: translate(-47%, -50%)
+                cursor: pointer
+                    
+            .play-btn:hover
+                opacity: 1
+                
+            iframe
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+                width: 95%
+                height: 100%
+                
+        .preview-vid:hover > .play-btn
+            display: block
+                
+        .preview-vid.viewing
+            iframe
+                display: block
+                    
+        .preview-link
+            margin-top: 4%
+            border: 1px solid #eee
+            border-radius: 5px
+            display: block
+            overflow: hidden
+            width: 55%
+            min-width: 150px
+            max-width: 200px
+            color: #616161
+            transition: all 0.3s ease
+            -moz-transition: all 0.3s ease
+            -webkit-transition: all 0.3s ease-in-out
+
+            i
+                padding: 5%
+                background: #333
+                color: #fff
+                margin-right: 5%
+            
+        .preview-link:hover
+            text-decoration: none
+            border-color: #333
+            
+        .preview-desc
+            .user
+                color: #919191
+            .stats
+                display: block
+                .heart
+                    color: red
+                    
+    .video-item:hover
+        opacity: 1
+        left: 1%
+    
+                    
+                    
+/* FADE IN ANIMATION Slidein*/
+@keyframes slideleft 
+    from 
+        opacity: 0 
+        left: 10%
+    to 
+        opacity: 1 
+        left: -2% 
+@-webkit-keyframes slideleft 
+    from 
+        opacity: 0 
+        left: 10%
+    to 
+        opacity: 1 
+        left: -2%
+/* Firefox < 16 */
+@-moz-keyframes slideleft 
+    from
+        opacity: 0 
+        left: 10%
+    to 
+        opacity: 1 
+        left: -2%
+/* Internet Explorer */
+@-ms-keyframes slideleft 
+    from 
+        opacity: 0 
+        left: 10
+    to 
+        opacity: 1 
+        left: -2%

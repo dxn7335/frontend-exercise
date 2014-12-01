@@ -1,0 +1,24 @@
+<div class="container sect" id='video-sect'>
+    <div id='loading'>LOADING</div>
+    <div class="video-item" ng-repeat="video in videos">
+        <div id="{{video.id}}" class='preview-vid col-md-7 col-md-offset-1'>
+            <!--<iframe src="{{trustSrc(video.embedUrl)}}" width="500" height="381" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+            <img src="{{video.thumbnail_large}}" class="preview-image" alt=""/>
+            <i class="play-btn fa fa-play-circle" ng-click="playVideo(video.id)"></i>
+        </div>
+        <div class="col-md-3 preview-desc">
+            <div class="preview-text">
+                <h2 class="title">{{video.title | uppercase}}</h2>
+                <h4 class="user">{{video.user_name}}</h4>
+                <!--<p class="preview-description-text" ng-bind-html="renderHTML(video.description)"></p>-->
+                <span class='stats'><i class="fa fa-eye"></i> {{video.stats_number_of_plays}}</span>
+                <span class='stats'><i class="fa fa-heart heart"></i> {{video.stats_number_of_likes}}</span>
+            </div>
+            <a ng-href="{{video.url}}" class="preview-link" target="_blank"><i class="fa fa-link"></i>Watch on Vimeo</a>
+        </div>
+    </div>
+    <div id="play-area" ng-click='exitVideo()'></div>
+    <div id='error' ng-hide="videos.length > 0">
+        <h2>No Videos Found</h2>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+.user-info {
+  margin: auto;
+  margin-top: 82px;
+  left: 0;
+  top: 0;
+  width: 23%;
+  min-width: 320px;
+  height: 100%;
+  position: fixed;
+  background: #fff;
+  border-right: 1px solid #EDEDED;
+  z-index: 2;
+  -webkit-animation: slidein 0.9s;
+  -moz-animation: slidein 0.9s;
+  -ms-animation: slidein 0.9s;
+  -o-animation: slidein 0.9s; }
+  .user-info .banner-img {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0; }
+  .user-info .info-txt-wrap {
+    padding: 3% 5%; }
+    .user-info .info-txt-wrap p {
+      margin-bottom: 10%; }
+  .user-info .name {
+    border-bottom: 3px solid;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .user-info .stats {
+    display: block; }
+    .user-info .stats .num {
+      font-weight: 600; }
+  .user-info .channel-url {
+    margin-top: 4%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: block;
+    overflow: hidden;
+    width: 55%;
+    min-width: 180px;
+    max-width: 200px;
+    color: #616161;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease-in-out; }
+    .user-info .channel-url i {
+      padding: 5%;
+      background: #333;
+      color: #fff;
+      margin-right: 5%; }
+  .user-info .channel-url:hover {
+    text-decoration: none;
+    border-color: #333; }
+
+/* FADE IN ANIMATION Slidein */
+@keyframes slidein {
+  from {
+    opacity: 0;
+    left: -10%; }
+  to {
+    opacity: 1;
+    left: 0; } }
+@-webkit-keyframes slidein {
+  from {
+    opacity: 0;
+    left: -10%; }
+  to {
+    opacity: 1;
+    left: 0; } }
+/* Firefox < 16 */
+@-moz-keyframes slidein {
+  from {
+    opacity: 0;
+    left: -10%; }
+  to {
+    opacity: 1;
+    left: 0; } }
+/* Internet Explorer */
+@-ms-keyframes slidein {
+  from {
+    opacity: 0;
+    left: -10%; }
+  to {
+    opacity: 1;
+    left: 0; } }
+
+/*# sourceMappingURL=info.css.map */
